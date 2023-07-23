@@ -1,0 +1,122 @@
+
+/*Navigation*/
+.row{
+  
+  display: flex;
+  justify-content: space-around;
+  background-color: #243665;
+
+}
+nav ul{
+  display: flex;
+  list-style: none;
+    line-height: 50px;
+}
+nav ul li{
+  margin: 0 10px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: larger;
+
+}
+nav ul li a:hover{
+  background-color: rgb(172, 172, 10);
+}
+/*Mode Button*/
+.switch-mode{
+    margin-top: 15px;
+}
+/*Content*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 10px 0; */
+}
+.container .column{
+  width:calc(30% - 20px);
+  text-align: center;
+  background-color: darkgrey;
+  margin: 10px 10px;
+}
+.container .column .cardFilm img{
+  width: 100%;
+  height: 250px;
+}
+/*Popup*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup img{ width: 100%;}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #d50b0b;
+}
+.popup .close:hover {color: #06D85F;}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: black;
+}
+/*Footer*/
+.footer{
+  text-align: center;
+  background-color: rgba(59, 88, 233, 0.7);
+  /* height: 10vh;  */
+  height: 50px;
+  line-height: 50px;
+}
+
+/*contact*/
+.contact{
+  color: rgb(79, 79, 21);
+  margin: 20px 20px;
+}
+.detail{
+  overflow: hidden;
+  text-align: center;
+}
+.detail img{
+  width: 50%;
+  height: 50%;
+}
+/*detailURL*/
+
